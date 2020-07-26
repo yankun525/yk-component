@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache" content="no-cache">
+        <meta http-equiv="Cache-control" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <script>
+            function setSystem(type) {
+                if (window.store) {
+                    window.store.dispatch('system', type);
+                } else {
+                    window.app_system = type;
+                }
+            }
+            window.sendGpmMessage = function(data) {
+                var topOrigin = localStorage.getItem('topOrigin');
+                if (topOrigin && top !== self) {
+                    top.postMessage(data, topOrigin);
+                }
+            }
+            try {
+                window.addEventListener('message', function(res) {
+                    if (typeof res.data !== 'object' || !res.data.event) return false;
+                    switch (res.data.event) {
+                        case 'init':
+                            localStorage.setItem('topOrigin', res.origin);
+                            setSystem(res.data.system);
+                            break;
+                    }
+                }, false);
+                top.postMessage({
+                    event: 'initMessage',
+                    origin: location.origin
+                }, '*');
+            } catch(e) {
+                console.error('设置system出现异常');
+            }
+        </script>
+        <!-- 部分jquery组件使用 -->
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    </head>
+    <body>
+        <noscript>
+            <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+    </body>
+</html>

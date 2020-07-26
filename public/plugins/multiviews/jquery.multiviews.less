@@ -1,0 +1,113 @@
+.multiviews{
+	border-top: 1px solid #DDDDDD
+}
+.multiviews-border{
+	border: 1px solid #DDDDDD
+}
+.multiviews-top{
+	padding: 0 22px;
+	position: relative;
+	background: #ebeff2;
+	border-bottom: 1px solid #DDDDDD;
+	overflow: hidden
+}
+.multiviews-icon-left,
+.multiviews-icon-right{
+	height: 30px;
+	width: 22px;
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	z-index: 100;
+	background: #ebeff2;
+	line-height: 30px
+}
+.multiviews-icon-left{
+	left: 0;
+	top: 0;
+	border-right: 1px solid #DDDDDD
+}
+.multiviews-icon-right{
+	right: 0;
+	top: 0;
+	border-left: 1px solid #DDDDDD
+}
+.multiviews-title{
+	height: 30px;
+	width: 300%;
+}
+.multiviews-title>ul{
+	left: -1px;
+	margin: 0;
+	position: relative;
+	display: inline-block;
+}
+.multiviews-title > ul > li{
+	height: 30px;
+	float: left;
+	padding: 7px 6px 5px 10px;
+	position: relative;
+	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	background-color: #F5F5F5;
+	color: #8E8E8F;
+	margin-right: 2px;
+	width: 110px;
+}
+.multiviews-title > ul > li.active{
+	background-color: #ffffff;
+	color: #296AB4;
+}
+.multiviews-title > ul > li > span{
+	width: 78px;
+	height: 18px;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-right: 2px;
+	float: left;
+}
+.multiviews-icon-close{
+	font-size: 12px;
+	cursor: pointer;
+}
+.multiviews-body{
+	overflow: hidden;
+}
+.multiviews-body > iframe,
+.multiviews-body > div{
+	display: none;
+}
+.multiviews-dropdown{
+    position: absolute;
+    z-index: 1000;
+    float: left;
+    max-height: 300px;
+    top: auto;
+    margin-bottom: 2px;
+    overflow: auto;
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box
+}
+.multiviews-dropdown li{
+    padding: 3px 15px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 24px
+}
+.multiviews-dropdown li:focus,
+.multiviews-dropdown li:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}

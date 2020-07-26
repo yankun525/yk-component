@@ -1,0 +1,12 @@
+{
+	"code": "success",
+	"data": {
+		"avatar": "",
+		"token": "2607f532-67a7-41fc-8c06-54b5d8ee9667",
+		"username": "用户",
+		"userno": "000001",
+		"userphone": "15057652779"
+	},
+	"message": "API调用成功",
+	"success": true
+}

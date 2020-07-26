@@ -1,0 +1,39 @@
+{
+    "code": "success",
+    "data": {
+        "items": [{
+            "paramcode": "APP_NAME",
+            "paramname": "应用名称",
+            "paramvalue": "YK's component",
+            "paramtype": 1,
+            "remark": ""
+        }, {
+            "paramcode": "COOKIE_OUT",
+            "paramname": "cookie验证登录",
+            "paramvalue": "0",
+            "paramtype": 1,
+            "remark": "参数值为1时，使用cookie记录登录的有效时间"
+        }, {
+            "paramcode": "COOKIE_OUT_TIMER",
+            "paramname": "cookie失效时间",
+            "paramvalue": "60000",
+            "paramtype": 1,
+            "remark": "单位毫秒"
+        }, {
+            "paramcode": "MENU_TOP_SHOW",
+            "paramname": "菜单头部显示",
+            "paramvalue": "1",
+            "paramtype": 1,
+            "remark": "参数值为1时，菜单头部显示"
+        }, {
+            "paramcode": "OPEN_FIRST_MENU",
+            "paramname": "打开第一个应用",
+            "paramvalue": "0",
+            "paramtype": 1,
+            "remark": "是否在点击nav打开 查询该菜单下第一个页面打开"
+        }],
+        "total": 5
+    },
+    "message": "API调用成功",
+    "success": true
+}

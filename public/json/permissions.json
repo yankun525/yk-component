@@ -1,0 +1,93 @@
+{
+    "code": "success",
+    "data": [{
+        "permissionname": "组件",
+        "permissionicon": "iconfont icon-liebiaozhanshi",
+        "children": [{
+            "permissionname": "日历",
+            "permissionurl": "/pages/apps/calendar",
+            "permissionicon": "iconfont icon-rili"
+        }, {
+            "permissionname": "multigrid",
+            "permissionicon": "iconfont icon-biaoge",
+            "children": [{
+                "permissionname": "基本用法",
+                "permissionurl": "/pages/apps/multigrid"
+            }]
+        }, {
+            "permissionname": "头像剪切",
+            "permissionurl": "/pages/apps/avatar",
+            "permissionicon": "el-icon-picture-outline"
+        }, {
+            "permissionname": "倒计时",
+            "permissionurl": "/pages/apps/countdown",
+            "permissionicon": "el-icon-alarm-clock"
+        }, {
+            "permissionname": "slider",
+            "permissionurl": "/pages/apps/slider",
+            "permissionicon": "el-icon-tickets"
+        }, {
+            "permissionname": "views",
+            "permissionurl": "/pages/views",
+            "permissionicon": "el-icon-files"
+        }]
+    }, {
+        "permissionname": "功能",
+        "permissionicon": "iconfont icon-tupianzhanshi",
+        "children": [{
+            "permissionname": "el-table",
+            "permissionicon": "el-icon-document-copy",
+            "children": [{
+                "permissionname": "表格参数",
+                "permissionurl": "/pages/apps/tableconfig",
+                "permissionicon": ""
+            }, {
+                "permissionname": "表头配置",
+                "permissionurl": "/pages/apps/tablesettings",
+                "permissionicon": ""
+            }]
+        }, {
+            "permissionname": "水印",
+            "permissionurl": "/pages/apps/watermark",
+            "permissionicon": "el-icon-edit-outline"
+        }, {
+            "permissionname": "Select",
+            "permissionurl": "/pages/apps/select",
+            "permissionicon": "el-icon-document"
+        }, {
+            "permissionname": "Request",
+            "permissionurl": "/pages/apps/request",
+            "permissionicon": "el-icon-document"
+        }, {
+            "permissionname": "Single Tools",
+            "permissionurl": "/pages/apps/singletools",
+            "permissionicon": "el-icon-document"
+        }, {
+            "permissionname": "Multi Tools",
+            "permissionurl": "/pages/apps/multitools",
+            "permissionicon": "el-icon-document"
+        }, {
+            "permissionname": "Tree Tools",
+            "permissionurl": "/pages/apps/treetools",
+            "permissionicon": "el-icon-document"
+        }]
+    }, {
+        "permissionname": "函数",
+        "permissionicon": "iconfont icon-yingyong",
+        "children": [{
+            "permissionname": "模板函数",
+            "permissionurl": "/pages/apps/rendertext",
+            "permissionicon": "el-icon-news"
+        }, {
+            "permissionname": "动画函数",
+            "permissionurl": "/pages/apps/animate",
+            "permissionicon": "el-icon-news"
+        }, {
+            "permissionname": "RegExp",
+            "permissionurl": "/pages/apps/regexp",
+            "permissionicon": "el-icon-news"
+        }]
+    }],
+    "message": "API调用成功",
+    "success": true
+}

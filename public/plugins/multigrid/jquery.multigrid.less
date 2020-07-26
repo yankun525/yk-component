@@ -1,0 +1,463 @@
+.multigrid{
+    border: 1px solid #dddddd;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff
+}
+.multigrid .form-control{
+    padding: 5px;
+}
+.multigrid-view1,
+.multigrid-view2{
+    position: relative;
+    overflow: hidden
+}
+.multigrid-view1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden
+}
+.multigrid-view1 > .multigrid-body > .multigrid-body-inner{
+    padding-bottom: 20px
+}
+.multigrid-view2 > .multigrid-head > .multigrid-head-box{
+    float: left;
+    padding-right: 20px
+}
+.multigrid-head{
+    overflow: hidden;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+    background: #ffffff;
+    z-index: 2
+}
+.multigrid-head-box{
+    margin-bottom: -1px
+}
+.multigrid-view1 .multigrid-body{
+    overflow: hidden
+}
+.multigrid-view2 .multigrid-body{
+    overflow: auto
+}
+.multigrid .multigrid-head-box > table > tbody > tr > th > div.multigrid-check,
+.multigrid .multigrid-body-inner > table > tbody > tr > td > div.multigrid-check,
+.multigrid .multigrid-body > table > tbody > tr > td > div.multigrid-check{
+    width: 30px;
+    height: 39px;
+    padding: 13px 7px 12px 8px
+}
+.multigrid-dropdown .multigrid-check{
+    float: left;
+    height: 14px;
+    margin-top: 5px;
+    margin-right: 5px
+}
+.multigrid-check .checkbox{
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    display: inline-block;
+    padding: 0;
+    float: left;
+    overflow: hidden
+}
+.multigrid-check .checkbox input[type="checkbox"]{
+    margin: 0;
+    left: 0;
+    top: 0
+}
+.multigrid-check .checkbox label{
+    position: static
+}
+.multigrid-check .checkbox label:before{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0
+}
+.multigrid-check .checkbox label:after{
+    top: 1px;
+    left: 0;
+    margin: 0;
+    padding: 0
+}
+.multigrid .multigrid-body-inner > table > tbody > tr > td,
+.multigrid .multigrid-body > table > tbody > tr > td,
+.multigrid .multigrid-footer > table > tbody > tr > td{
+    border-right: 1px solid #dddddd
+}
+.multigrid-striped  tr.odd{
+    background-color: #f4f8fb
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.selected,
+.multigrid .multigrid-body > table > tbody > tr.selected{
+    background-color: #f5f5f5
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-primary,
+.multigrid .multigrid-body > table > tbody > tr.bg-primary{
+    color: #fff;
+    background-color: #296AB4
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-primary .dropdown-menu,
+.multigrid .multigrid-body > table > tbody > tr.bg-primary .dropdown-menu{
+    color: #333333
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-primary .multigrid-lin,
+.multigrid .multigrid-body > table > tbody > tr.bg-primary .multigrid-link{
+    color: #fff
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-success,
+.multigrid .multigrid-body > table > tbody > tr.bg-success{
+    background-color: #dff0d8
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-info,
+.multigrid .multigrid-body > table > tbody > tr.bg-info{
+    background-color: #d9edf7
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-warning,
+.multigrid .multigrid-body > table > tbody > tr.bg-warning{
+    background-color: #fcf8e3
+}
+.multigrid .multigrid-body-inner > table > tbody > tr.bg-danger,
+.multigrid .multigrid-body > table > tbody > tr.bg-danger{
+    background-color: #f2dede
+}
+.multigrid .multigrid-head-box > table > tbody > tr > th > div,
+.multigrid .multigrid-body-inner > table > tbody > tr > td > div,
+.multigrid .multigrid-body > table > tbody > tr > td > div,
+.multigrid .multigrid-footer > table > tbody > tr > td > div{
+    padding: 5px 5px 4px;
+    line-height: 30px;
+    overflow: hidden;
+    height: 39px;
+    text-overflow: ellipsis;
+    margin-right: -1px;
+    white-space: nowrap
+}
+.multigrid .multigrid-body > table > tbody > tr.multigrid-detail > td > div{
+    padding: 0;
+    height: auto;
+    width: 100%;
+    white-space: normal;
+    overflow: initial;
+    text-overflow: initial
+}
+.multigrid .multigrid-body-inner > table > tbody > tr .dropdown-menu,
+.multigrid .multigrid-body > table > tbody > tr .dropdown-menu{
+    white-space: normal;
+    overflow: initial;
+    text-overflow: initial
+}
+.multigrid .multigrid-head-box > table > tbody > tr > th > div{
+    position: relative
+}
+.multigrid .multigrid-head-box > table > tbody > tr > th{
+    border: 1px solid #dddddd
+}
+.multigrid .multigrid-head-box > table > tbody > tr:first-child > th{
+    border-top: 0
+}
+.multigrid .multigrid-head-box > table > tbody > tr > th:first-child{
+    border-left: 0
+}
+.multigrid .multigrid-body-inner > table > tbody > tr,
+.multigrid .multigrid-body > table > tbody > tr{
+    border-bottom: 1px solid #dddddd
+}
+.multigrid-fixed{
+    position: absolute;
+    left: 0;
+    z-index: 1
+}
+.multigrid-loading{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 40px;
+    left: 0
+}
+.multigrid-loading>span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    margin-top: -7px
+}
+.multigrid-page{
+    height: 40px;
+    line-height: 38px;
+    margin-top: -1px;
+    position: relative;
+    border-top: 1px solid #dddddd
+}
+.multigrid-page-info>span{
+    margin-left: 10px;
+    float: left
+}
+.multigrid-page-info em{
+    font-style: normal
+}
+.multigrid-page-info select{
+    height: 24px
+}
+.multigrid-pagina{
+    padding: 7px 0 8px
+}
+.multigrid-pagina>i{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    float: left;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+.multigrid-pagina>i:active{
+    border-color: #9b9b9b
+}
+.multigrid-pagina>i.disabled{
+    opacity: 0.45
+}
+.multigrid-pagina>i.disabled:active{
+    border-color: #FFFFFF
+}
+.pagina-number{
+    height: 24px;
+    width: 30px;
+    float: left;
+    margin: 0 5px;
+    padding: 0px 4px 0 1px;
+    line-height: 24px;
+    box-shadow: none;
+    outline: none
+}
+.pagina-number:focus{
+    border: solid 1px #296AB4
+}
+.multigrid-model-settings{
+    float: left;
+    margin-top: 7px;
+    height: 24px;
+    position: relative
+}
+.multigrid-icon-settings{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+.multigrid-icon-settings:active{
+    border-color: #9b9b9b
+}
+.multigrid-line{
+    position: absolute;
+    width: 1px;
+    background-color: #bcbcbc;
+    top: 0;
+    z-index: 3;
+    cursor: e-resize
+}
+.multigrid-nomatches{
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+}
+.multigrid-link{
+    text-decoration: none
+}
+.multigrid-link:hover{
+    text-decoration: none
+}
+.multigrid-icon-up,
+.multigrid-icon-down,
+.multigrid-icon-downup{
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    right: 5px;
+    top: 50%;
+    margin-top: -7px;
+    background-repeat: no-repeat
+}
+.multigrid-icon-downup{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAm0lEQVQoU4VRsRHDMAiEQn02iUeQJolViKFEIWcSewRnk/QqyKGTdcolOlHB38PDg9BFjHHVkoi2C8YriTEuiLhrLSKOiE7NCyGldMs574i4VMJpjHHe+3chMLOOfPRyIrIRkUdmtgBQRv8JNycMOhvcrhgR5xLTJUdnAsAzhLD2Rh2IeK9GvYwxthmloFoNAEdd1n5Z3f3j51kfB3JGU+wV44EAAAAASUVORK5CYII=)
+}
+.multigrid-icon-down{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAcUlEQVQoU2NkIAAYR4iC2bNnOzAwMOzH4V1HRoIKQDpnz569gIGBIR7NlIWpqakJ4JCcP3++wO/fvw8wMjLqg/j///+/yMrK6pCYmPgBHtSzZs0yYGBgOAA1xSEtLe0CiI0SF7NmzUoACaalpYGsBAMAfFMgMYEGuK4AAAAASUVORK5CYII=)
+}
+.multigrid-icon-up{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAc0lEQVQoU92PsQ2AMAwE80V6RskIZBJI80PZRdiEFRiFPoVRIoIoQPS4+n+d3zLcbURkrpbk0mN0ISIBwFq9mUWSW9UNyDkPpZQVQDiBzXsfU0p7A1S1Vk73c2a2kExQ1dE516ofJn4DL5tXfH3xBv4DOACaZyYx9/3UaAAAAABJRU5ErkJggg==)
+}
+.multigrid-icon-first{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAj0lEQVQoU42R0Q3DIAxE7yZoNmk2aVboB0thJNgk3QuEK0ulIoVU8Y8/eLpDzxQRBQDnHG3/jogknkExxiXnHEluU+gD7CRXSx4g7/1KcgewtOoDFELYVDX2wCFJVZ8kDRjmmzR7HOouQZfqTKZ9vNaaSN765KkCAK8e/CfTwPtUZqsx66WUBOBxersG24Hf8stosc1ik2cAAAAASUVORK5CYII=)
+}
+.multigrid-icon-prev{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAATklEQVQoU42R2wkAIAwDzYaO4Fyl4KpSQfERg/29oy0J0mPcPQcC42ZWAFQqrPASTrgJDE7hBbug4J8QljwxcpBPKulKUgbFNtEuQhxlNZo5JhcziEmPAAAAAElFTkSuQmCC)
+}
+.multigrid-icon-next{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAY0lEQVQoU4XRwQnAIAwF0O+GHcFCdClzqBt0w5QIShuN9SL4X34OBmY+AICIbr3tCaUU0UcRuXLOpws8NBr6pG2agG1agjdyQUdbAKDuQE0pRQ+0UNeswAhX4BNaMIUN/H3WAy4pUu1YtZysAAAAAElFTkSuQmCC)
+}
+.multigrid-icon-last{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAjElEQVQoU52R2w3DIAxFMcJ7JZtgCVjKH+kI6SbJJmSCWzmqKqoGItVf9vWRn6Sqj5xzdBemqjCZzAGwMrOISG3ZL8gSADZmnlvwB3pXqADmUspmcQ+yXCUiSSmtI+gsCkCIaPkMfrVZq53b/Q0N2wE4vPexO7gBzrmpewIAOzNPo2M+Qwhx9JbbB78AgR55b9Or/3UAAAAASUVORK5CYII=)
+}
+.multigrid-icon-settings{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAUElEQVQ4T+2SwQ3AMAgD8WRthjFDwTLpZERC6j+Eb3j7wFiGNAYNVhI2swngKSyaJEfC7h4FMKUkcXQ5Ij5Vffs/Vy3/+iPbInIDuw3b69wCEGUzEsi74K8AAAAASUVORK5CYII=);
+}
+.multigrid-icon-plus{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAbUlEQVQ4T9WS0Q2AMAhEuclsh7kOVYaxToapCUmjfOCf8nmBwL0DElTvfQDYRGSQrFEPIlFVzXWSYc8HBlW1iMi+WKgkx90SFhCR3Ui7gGEFkZ2cwF5vNLOjtVYeVNMef5zjPN0jchDpX83EcgKimUAPpn1alAAAAABJRU5ErkJggg==);
+}
+.multigrid-icon-minus{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAPUlEQVQ4T2NkIBMwkqmPYQA0zpo16wAjI6M9iU4+wDh79uz/JGoCKydfIzlO/f///8EBCFVyAgYcOENHIwDROA/NbohlJgAAAABJRU5ErkJggg==);
+}
+.multigrid-icon-open{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAb0lEQVQoU3WPwQ2AIBAEbx+8tQQ7EksggaogoQShI0vQN48zZwKi0f1cspnM5uC9T0Q003cyYoxjKWUDMPQMMx9KqQlShhA0M689AGCx1qYLkLymsnNOS9+AOiWlqI0x+wOoU3JFXc3N8PPFPfEHnGbqJnfqiYrAAAAAAElFTkSuQmCC)
+}
+.multigrid-icon-close{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAWUlEQVQoU33P0QnAMAgEUJVkzwhu5RJ2s3SCKw0NJLbUT3meyu4epZSmqp0+it0dRNSZWc0ssplg9AFErVXXtA0801vaCwA4RaTNdRkc+eAB8tR66A1+37wACV83CVf+qogAAAAASUVORK5CYII=)
+}
+.multigrid-dropdown{
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    width: 160px;
+    max-height: 300px;
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px;
+    overflow: auto;
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box
+}
+.multigrid-dropdown li{
+    padding: 3px 20px;
+    cursor: pointer;
+    line-height: 24px
+}
+.multigrid-dropdown li:focus,
+.multigrid-dropdown li:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.multigrid-footer{
+    border-top: 1px solid #dddddd
+}
+.multigrid-footer-item{
+    height: 39px;
+    line-height: 39px;
+    padding: 0 5px;
+    float: left;
+}
+.multigrid-detail > td{
+    padding: 8px;
+}
+.multigrid-detail-icon{
+    text-align: center;
+    width: 30px;
+}
+.multigrid-icon-minus,
+.multigrid-icon-plus{
+    width: 20px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.multigrid-menu .multigrid-dropdown{
+    display: block;
+    height: 290px;
+}
+.multigrid-detail-icon.disabled{
+    opacity: 0.45;
+}
+.multigrid-single{
+    border: 0;
+}
+.multigrid-single > table{
+    width: 100%;
+}
+.multigrid-single .multigrid-page{
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+}
+.multigrid-single > table > thead > tr > th{
+    position: relative;
+}
+.multigrid-single > table > thead > tr > th,
+.multigrid-single > table > tbody > tr > td{
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+.multigrid-tree{
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.multigrid-tree-icon{
+    width: 10px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+    margin-left: -12px;
+}
+.multigrid .multigrid-body .multigrid-children > td > table{
+    position: relative;
+    margin-bottom: -1px;
+}
+.multigrid .multigrid-body-inner .multigrid-children > td > table > tbody > tr,
+.multigrid .multigrid-body .multigrid-children > td > table > tbody > tr{
+    border-bottom: 1px solid #dddddd
+}
+.multigrid .multigrid-body-inner .multigrid-children > td > table > tbody > tr > td,
+.multigrid .multigrid-body .multigrid-children > td > table > tbody > tr > td{
+    border-right: 1px solid #dddddd
+}
+.multigrid .multigrid-body-inner .multigrid-children > td > table > tbody > tr > td:last-child,
+.multigrid .multigrid-body .multigrid-children > td > table > tbody > tr > td:last-child{
+    border-right: 0
+}
+.multigrid .multigrid-body-inner .multigrid-children > td > table > tbody > tr > td > div,
+.multigrid .multigrid-body .multigrid-children > td > table > tbody > tr > td > div{
+    padding: 5px 5px 4px;
+    line-height: 30px;
+    overflow: hidden;
+    height: 39px;
+    text-overflow: ellipsis;
+    margin-right: -1px;
+    white-space: nowrap
+}
+.multigrid-close{
+    display: none;
+}
