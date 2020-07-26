@@ -2,9 +2,9 @@
     <div class="p-m">
         <h2>
             <span>watermark</span>
-            <!-- <a class="link m-l-xl" @click="download">
+            <a class="link m-l-xl" @click="download">
                 <i class="iconfont icon-lianjie"></i>
-            </a> -->
+            </a>
         </h2>
         <h3 v-t="'column.prop'"></h3>
         <el-table :data="params">
@@ -94,9 +94,9 @@ mounted() {\n\
         };
     },
     methods: {
-        // download() {
-        //     this.$helper.export('/plugins/watermark.js');
-        // }
+        download() {
+            this.$helper.export('/plugins/watermark.js');
+        }
     },
     mounted() {
         var time = new Date().format('yyyy-MM-dd hh:mm');

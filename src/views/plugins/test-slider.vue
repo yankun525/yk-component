@@ -2,9 +2,9 @@
     <div class="p-t-l p-r-l p-l-l">
         <h2>
             <span>app-slider</span>
-            <!-- <a class="link m-l-xl" @click="download">
+            <a class="link m-l-xl" @click="download">
                 <i class="iconfont icon-lianjie"></i>
-            </a> -->
+            </a>
         </h2>
         <div>显示隐藏组件</div>
         <h3 v-t="'column.prop'"></h3>
@@ -94,9 +94,9 @@ export default {
         };
     },
     methods: {
-        // download() {
-        //     this.$helper.export('/plugins/slider.vue');
-        // }
+        download() {
+            this.$helper.export('/plugins/slider.vue');
+        }
     }
 };
 </script>

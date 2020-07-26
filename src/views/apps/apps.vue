@@ -235,6 +235,8 @@ export default {
             var items = { root: [] };
             this.hash = {};
             this.watchTree(data, 0, items);
+            console.log(items.children)
+            debugger
             this.menu = items.children;
         },
         watchTree(arr, level, items) {

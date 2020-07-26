@@ -1,6 +1,11 @@
 <template>
     <div class="p-m">
-        <h1>app-calendar</h1>
+        <h1>
+            <span>app-calendar</span>
+            <a class="link m-l-xl" @click="download">
+                <i class="iconfont icon-lianjie"></i>
+            </a>
+        </h1>
         <p>展示月份组件。</p>
         <h3 v-t="'column.prop'"></h3>
         <el-table :data="params">
@@ -182,6 +187,9 @@ created() {\n\
         }
     },
     methods: {
+        download() {
+            this.$helper.export('/plugins/calendar.vue');
+        },
         change(date) {
             this.$alert(date);
         },

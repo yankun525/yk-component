@@ -2,9 +2,9 @@
     <div class="p-t-l p-r-l p-l-l">
         <h2>
             <span>app-countdown</span>
-            <!-- <a class="link m-l-xl" @click="download">
+            <a class="link m-l-xl" @click="download">
                 <i class="iconfont icon-lianjie"></i>
-            </a> -->
+            </a>
         </h2>
         <div>倒计时组件</div>
         <h3 v-t="'column.prop'"></h3>
@@ -251,9 +251,9 @@ export default {\n\
             }
             this.$refs.countdown1.reset(parseInt(this.date1)).start();
         },
-        // download() {
-        //     this.$helper.export('/plugins/countdown.vue');
-        // },
+        download() {
+            this.$helper.export('/plugins/countdown.vue');
+        },
         consoleStart() {
             console.log('event.start');
         },

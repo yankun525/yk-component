@@ -2,9 +2,9 @@
     <div class="p-t-m p-r-m p-l-m">
         <h2>
             <span>app-tablesettings</span>
-            <!-- <a class="link m-l-xl" @click="download">
+            <a class="link m-l-xl" @click="download">
                 <i class="iconfont icon-lianjie"></i>
-            </a> -->
+            </a>
         </h2>
         <div>配置表头，配置后会存储到localStorage</div>
         <h3 v-t="'column.prop'"></h3>
@@ -344,10 +344,10 @@ created() {\n\
             }
             this.items = res.data.items;
             this.total = res.data.total;
+        },
+        download() {
+            this.$helper.export('/plugins/tablesettings.vue');
         }
-        // download() {
-        //     this.$helper.export('/plugins/tablesettings.vue');
-        // }
     },
     created() {
         var me = this;

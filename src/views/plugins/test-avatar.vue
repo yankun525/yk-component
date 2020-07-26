@@ -2,9 +2,9 @@
     <div class="p-t-l p-r-l p-l-l">
         <h2>
             <span>app-avatar</span>
-            <!-- <a class="link m-l-xl" @click="download">
+            <a class="link m-l-xl" @click="download">
                 <i class="iconfont icon-lianjie"></i>
-            </a> -->
+            </a>
         </h2>
         <div>头像剪切组件</div>
         <h3 v-t="'column.prop'"></h3>
@@ -172,9 +172,9 @@ methods: {\n\
         };
     },
     methods: {
-        // download() {
-        //     this.$helper.export('/plugins/avatar.vue');
-        // },
+        download() {
+            this.$helper.export('/plugins/avatar.vue');
+        },
         createImage() {
             var image,
                 src = this.$refs.avatar.getBase64Image();

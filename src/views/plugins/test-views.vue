@@ -2,9 +2,9 @@
     <div class="p-t-l p-r-l p-l-l">
         <h2>
             <span>app-views</span>
-            <!-- <a class="link m-l-xl" @click="download">
+            <a class="link m-l-xl" @click="download">
                 <i class="iconfont icon-lianjie"></i>
-            </a> -->
+            </a>
         </h2>
         <div>多tab打开页面组件，支持路由和iframe。</div>
         <h3 v-t="'column.prop'"></h3>
@@ -115,9 +115,9 @@ openCount() {\n\
         };
     },
     methods: {
-        // download() {
-        //     this.$helper.export('/plugins/views.vue');
-        // },
+        download() {
+            this.$helper.export('/plugins/views.vue');
+        },
         openBaidu() {
             this.$store.dispatch('openView', {
                 title: '百度',
