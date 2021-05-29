@@ -57,10 +57,10 @@ export default {
         login() {
             var notnull = this.$t('msg.fail.notnull');
             this.errormsg = '';
-            // if (!this.form.suppliercode) {
-            //     this.errormsg = this.$t('login.suppliercode') + notnull;
-            //     return false;
-            // }
+            if (!this.form.suppliercode) {
+                this.errormsg = this.$t('login.suppliercode') + notnull;
+                return false;
+            }
             if (!this.form.mobile) {
                 this.errormsg = this.$t('login.phoneoremail') + notnull;
                 return false;
