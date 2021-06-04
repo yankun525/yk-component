@@ -263,7 +263,7 @@ export default {
             form: {
                 attachname: '',
                 uploadername: '',
-                name: '黄远锦',
+                name: '颜锟',
                 no: '0047746',
                 dept: '',
                 orgcode: '',
